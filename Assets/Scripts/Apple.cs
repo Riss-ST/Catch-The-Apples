@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Apple : MonoBehaviour
 {
-     public enum ItemType { Apple, Booster, Bomb }
+    public enum ItemType { Apple, Health, Bomb }
 
-    [SerializeField] private float timeAmount = 5f;
+
     [SerializeField] private ItemType item;
 
     void OnTriggerEnter2D(Collider2D other)
@@ -22,15 +22,15 @@ public class Apple : MonoBehaviour
         {
             
             if(item == ItemType.Apple){
-                GameManager.instance.AddScore();
+                Game_Manager.instance.AddScore();
             }
 
-            else if(item == ItemType.Booster){
-                GameManager.instance.AddTime(timeAmount);
+            else if(item == ItemType.Health){
+                Game_Manager.instance.AddHealth();
             }
 
             else if(item == ItemType.Bomb){
-                GameManager.instance.ReduceTime(timeAmount);
+                Game_Manager.instance.ReduceHealth();
             }
             Destroy(gameObject);
         }

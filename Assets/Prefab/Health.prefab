@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 9022706867915188873}
   - component: {fileID: -1024960510643139045}
   m_Layer: 0
-  m_Name: Booster
-  m_TagString: Booster
+  m_Name: Health
+  m_TagString: Health
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,5 +161,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ba7f9d70f38a6b4980804a671850cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeAmount: 5
   item: 1

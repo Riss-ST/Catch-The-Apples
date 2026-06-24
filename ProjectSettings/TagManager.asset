@@ -9,6 +9,7 @@ TagManager:
   - Box
   - Bomb
   - Booster
+  - Health
   layers:
   - Default
   - TransparentFX
